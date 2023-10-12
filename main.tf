@@ -23,7 +23,8 @@ resource "aws_instance" "secsummit" {
        ip ssh version 2
        username cisco123 privilege 15 secret cisco123
        enable secret cisco123
-       restconf
+       interface GigabitEthernet1
+       no ipv6 address dhcp
    EOF
    
    #provisioner "local-exec" {
