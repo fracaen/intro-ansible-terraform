@@ -32,9 +32,9 @@ resource "aws_instance" "secsummit" {
 }
 
 output "instance_public_ip" {
-   value                        = aws_instance.clus.public_ip
+   value                        = aws_instance.secsummit.public_ip
 }
 
 output "instance_private_ip" {
-   value                        = aws_instance.clus.private_ip
+   value                        = aws_instance.secsummit.private_ip
 }
