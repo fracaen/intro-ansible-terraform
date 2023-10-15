@@ -28,7 +28,7 @@ resource "aws_instance" "secsummit" {
    EOF
    
    #provisioner "local-exec" {
-   #   command = "ansible-playbook vpn.yml --extra-vars 'router_public=${aws_instance.secsummit.public_ip}'"
+   #   command = "ansible-playbook vpn.yaml --extra-vars 'router_public=${aws_instance.secsummit.public_ip}'"
    #}
 }
 
